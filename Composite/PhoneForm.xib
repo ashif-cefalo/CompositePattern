@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PhoneForm" customModule="CompositePattern" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="** Office" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Omm-QO-sM3">
+                    <rect key="frame" x="20" y="14" width="335" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Home" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IDR-BB-pV8">
+                    <rect key="frame" x="20" y="62" width="335" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Omm-QO-sM3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="6qq-jF-WGt"/>
+                <constraint firstItem="IDR-BB-pV8" firstAttribute="top" secondItem="Omm-QO-sM3" secondAttribute="bottom" constant="18" id="Oai-TT-mdT"/>
+                <constraint firstItem="Omm-QO-sM3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="P03-kb-to7"/>
+                <constraint firstItem="IDR-BB-pV8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="UHd-0X-xob"/>
+                <constraint firstAttribute="trailing" secondItem="IDR-BB-pV8" secondAttribute="trailing" constant="20" id="bvW-Wp-8sb"/>
+                <constraint firstAttribute="trailing" secondItem="Omm-QO-sM3" secondAttribute="trailing" constant="20" id="yyf-Yi-abL"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="homePhoneField" destination="IDR-BB-pV8" id="ZS2-mH-x8f"/>
+                <outlet property="officePhoneField" destination="Omm-QO-sM3" id="umd-k5-00R"/>
+            </connections>
+            <point key="canvasLocation" x="245.5" y="99"/>
+        </view>
+    </objects>
+</document>

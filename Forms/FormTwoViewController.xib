@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FormTwoViewController" customModule="CompositePattern" customModuleProvider="target">
+            <connections>
+                <outlet property="nameComposite" destination="LdV-Kw-B5e" id="Dje-PB-xax"/>
+                <outlet property="phoneComposite" destination="9lR-0p-LGe" id="lyK-Ys-Hy0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdV-Kw-B5e" customClass="NameForm" customModule="CompositePattern" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="54" width="375" height="117"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ux-CN-Wjz">
+                            <rect key="frame" x="20" y="19" width="335" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-hV-WgH">
+                            <rect key="frame" x="20" y="67" width="335" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="4ux-CN-Wjz" secondAttribute="trailing" constant="20" id="8Th-7p-Ax1"/>
+                        <constraint firstItem="4ux-CN-Wjz" firstAttribute="top" secondItem="LdV-Kw-B5e" secondAttribute="top" constant="19" id="A7s-IJ-TZO"/>
+                        <constraint firstAttribute="height" constant="117" id="NZk-gc-PdW"/>
+                        <constraint firstItem="IRc-hV-WgH" firstAttribute="top" secondItem="4ux-CN-Wjz" secondAttribute="bottom" constant="18" id="UQb-sQ-ilG"/>
+                        <constraint firstAttribute="trailing" secondItem="IRc-hV-WgH" secondAttribute="trailing" constant="20" id="ZhK-0J-YtN"/>
+                        <constraint firstItem="IRc-hV-WgH" firstAttribute="leading" secondItem="LdV-Kw-B5e" secondAttribute="leading" constant="20" id="bEe-gf-che"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="117" id="emO-6t-rEa"/>
+                        <constraint firstItem="4ux-CN-Wjz" firstAttribute="leading" secondItem="LdV-Kw-B5e" secondAttribute="leading" constant="20" id="mZh-T8-7J5"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="firstNameField" destination="4ux-CN-Wjz" id="t6c-qj-AxV"/>
+                        <outlet property="lastNameField" destination="IRc-hV-WgH" id="M5b-6Z-F0g"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lR-0p-LGe" customClass="PhoneForm" customModule="CompositePattern" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="182" width="375" height="106"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Office" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cjX-Ek-Rnt">
+                            <rect key="frame" x="20" y="14" width="335" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Home" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWJ-bu-y9Z">
+                            <rect key="frame" x="20" y="62" width="335" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="cjX-Ek-Rnt" firstAttribute="top" secondItem="9lR-0p-LGe" secondAttribute="top" constant="14" id="3Vg-bz-G8N"/>
+                        <constraint firstItem="uWJ-bu-y9Z" firstAttribute="top" secondItem="cjX-Ek-Rnt" secondAttribute="bottom" constant="18" id="TFs-Ji-mdz"/>
+                        <constraint firstAttribute="trailing" secondItem="uWJ-bu-y9Z" secondAttribute="trailing" constant="20" id="Web-B3-bD1"/>
+                        <constraint firstAttribute="trailing" secondItem="cjX-Ek-Rnt" secondAttribute="trailing" constant="20" id="b2x-ah-SoF"/>
+                        <constraint firstAttribute="height" constant="106" id="gcT-Vs-ZbX"/>
+                        <constraint firstItem="cjX-Ek-Rnt" firstAttribute="leading" secondItem="9lR-0p-LGe" secondAttribute="leading" constant="20" id="pcf-Hp-W5T"/>
+                        <constraint firstItem="uWJ-bu-y9Z" firstAttribute="leading" secondItem="9lR-0p-LGe" secondAttribute="leading" constant="20" id="td3-gF-6Ke"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="homePhoneField" destination="uWJ-bu-y9Z" id="r95-IB-1Rc"/>
+                        <outlet property="officePhoneField" destination="cjX-Ek-Rnt" id="Zzn-BS-SBa"/>
+                    </connections>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOa-zd-wpx">
+                    <rect key="frame" x="147" y="292" width="81" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8yY-Z5-pgE"/>
+                        <constraint firstAttribute="width" constant="81" id="V1v-rF-uec"/>
+                    </constraints>
+                    <state key="normal" title="Validate"/>
+                    <connections>
+                        <action selector="valdiateButtonPressed:" destination="-1" eventType="touchUpInside" id="20Y-Bu-TaM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9lR-0p-LGe" firstAttribute="top" secondItem="LdV-Kw-B5e" secondAttribute="bottom" constant="11" id="122-RB-rE3"/>
+                <constraint firstAttribute="trailing" secondItem="9lR-0p-LGe" secondAttribute="trailing" id="68z-uz-ueC"/>
+                <constraint firstItem="zOa-zd-wpx" firstAttribute="top" secondItem="9lR-0p-LGe" secondAttribute="bottom" constant="4" id="J6r-yf-WYq"/>
+                <constraint firstAttribute="trailing" secondItem="LdV-Kw-B5e" secondAttribute="trailing" id="Me5-OZ-8i1"/>
+                <constraint firstItem="LdV-Kw-B5e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="54" id="Vqc-2X-Df6"/>
+                <constraint firstItem="LdV-Kw-B5e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bjh-4T-s0K"/>
+                <constraint firstItem="zOa-zd-wpx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="o5O-Mm-3MP"/>
+                <constraint firstItem="9lR-0p-LGe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oDc-ei-mHb"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

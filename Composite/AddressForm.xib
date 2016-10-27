@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddressForm" customModule="CompositePattern" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hbn-iM-6vn">
+                    <rect key="frame" x="20" y="15" width="335" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h97-25-a7g">
+                    <rect key="frame" x="20" y="63" width="335" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Postal Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z4v-27-luf">
+                    <rect key="frame" x="20" y="114" width="335" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Z4v-27-luf" firstAttribute="top" secondItem="h97-25-a7g" secondAttribute="bottom" constant="21" id="57L-3T-Hr4"/>
+                <constraint firstItem="Z4v-27-luf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="KtW-v9-PzY"/>
+                <constraint firstItem="h97-25-a7g" firstAttribute="top" secondItem="hbn-iM-6vn" secondAttribute="bottom" constant="18" id="Ohz-Gk-eXp"/>
+                <constraint firstAttribute="trailing" secondItem="h97-25-a7g" secondAttribute="trailing" constant="20" id="PY3-me-ucI"/>
+                <constraint firstItem="hbn-iM-6vn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="iP8-dk-SRg"/>
+                <constraint firstAttribute="trailing" secondItem="hbn-iM-6vn" secondAttribute="trailing" constant="20" id="k6Z-dD-cSB"/>
+                <constraint firstAttribute="trailing" secondItem="Z4v-27-luf" secondAttribute="trailing" constant="20" id="qri-Ru-xDl"/>
+                <constraint firstItem="hbn-iM-6vn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="vvL-z5-fZh"/>
+                <constraint firstItem="h97-25-a7g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="xOz-eK-xnN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressField" destination="hbn-iM-6vn" id="yWL-Mk-DLX"/>
+                <outlet property="cityField" destination="h97-25-a7g" id="YIJ-xT-7iT"/>
+                <outlet property="codeField" destination="Z4v-27-luf" id="RDh-dJ-hdH"/>
+            </connections>
+            <point key="canvasLocation" x="258.5" y="-401"/>
+        </view>
+    </objects>
+</document>
